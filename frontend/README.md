@@ -1,16 +1,72 @@
-# React + Vite
+# 🛍️ RIVIERA - E-commerce Web App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+RIVIERA is a full-stack e-commerce web application . It allows users to browse products, manage cart, add addresses, and place orders seamlessly.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Features
 
-## React Compiler
+### 🧑‍💻 User Features
+- User signup & login
+- Browse products with search & category filter
+- Add to cart / update quantity / remove items
+- Address management (add & select delivery address)
+- Smooth checkout flow
+- Place order (Cash on Delivery)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 🛠️ Admin Features
+- Add, edit, delete products
+- Upload product images (Cloudinary)
+- Manage stock
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🧱 Tech Stack
+
+### Frontend
+- React (Vite)
+- Tailwind CSS
+- React Router
+
+### Backend
+- Node.js
+- Express.js
+- MongoDB (Mongoose)
+
+### Other Tools
+- Cloudinary (Image hosting)
+- Axios (API requests)
+
+---
+
+## 📁 Project Structure
+root/
+├── frontend/ # React app
+├── backend/ # Express server
+
+---
+
+## ⚙️ Installation & Setup
+
+### 1️⃣ Clone the repository
+
+```bash
+git clone https://github.com/YOUR_USERNAME/YOUR_REPO.git
+cd YOUR_REPO
+cd backend
+npm install
+
+
+PORT=5000
+MONGO_URI=your_mongodb_connection
+CLOUD_NAME=your_cloudinary_name
+API_KEY=your_cloudinary_api_key
+API_SECRET=your_cloudinary_secret
+
+
+npm run dev
+
+cd frontend
+npm install
+npm run dev
+
