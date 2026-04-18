@@ -19,9 +19,6 @@ app.use((req, res, next) => {
 });
 
 
-
-const cors = require("cors");
-
 app.use(cors({
   origin: "*",
   methods: ["GET", "POST", "PUT", "DELETE"],
